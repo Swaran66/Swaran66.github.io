@@ -35,10 +35,11 @@
             margin: 0 15px;
             padding: 10px 20px;
             font-size: 1.2em;
-            transition: background-color 0.3s;
+            transition: background-color 0.3s, color 0.3s;
         }
         nav a:hover {
             background-color: #2980b9;
+            color: #ffffff;
             border-radius: 5px;
         }
         .content {
@@ -62,6 +63,11 @@
             border: 1px solid #ddd;
             border-radius: 5px;
             background-color: #f9f9f9;
+            transition: background-color 0.3s, box-shadow 0.3s;
+        }
+        .academic-section:hover, .work-section:hover, .publication-section:hover, .project-section:hover {
+            background-color: #e0f7fa;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
         }
         .academic-section h3, .work-section h3, .publication-section h3, .project-section h3 {
             color: #2c3e50;
