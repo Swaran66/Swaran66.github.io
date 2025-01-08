@@ -3,10 +3,160 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Personal Website</title>
+    <title>Swaranjit Roy</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+            color: #333;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 15px 0;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #444;
+            padding: 10px;
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 18px;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        .content {
+            padding: 20px;
+        }
+        .section {
+            margin-bottom: 40px;
+        }
+        .section h2 {
+            border-bottom: 2px solid #333;
+            padding-bottom: 5px;
+        }
+        .section ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        .section ul li {
+            margin: 5px 0;
+        }
+        footer {
+            text-align: center;
+            background-color: #333;
+            color: #fff;
+            padding: 10px 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+    <script>
+        function showSection(sectionId) {
+            const sections = document.querySelectorAll('.section');
+            sections.forEach(section => {
+                section.style.display = 'none';
+            });
+            document.getElementById(sectionId).style.display = 'block';
+        }
+        document.addEventListener('DOMContentLoaded', () => {
+            showSection('home');
+        });
+    </script>
 </head>
 <body>
-    <h1>Welcome to My Website!</h1>
-    <p>This is my personal website hosted on GitHub Pages.</p>
+    <header>
+        <h1>Swaranjit Roy</h1>
+    </header>
+    <nav>
+        <a href="#" onclick="showSection('home')">Home</a>
+        <a href="#" onclick="showSection('academics')">Academics</a>
+        <a href="#" onclick="showSection('work')">Work Experiences</a>
+        <a href="#" onclick="showSection('publications')">Publications</a>
+        <a href="#" onclick="showSection('projects')">Projects</a>
+    </nav>
+    <div class="content">
+        <div id="home" class="section">
+            <h2>Home</h2>
+            <p>My name is <strong>Swaranjit Roy</strong>. I am a Civil Engineering Graduate student at the University of North Dakota with a focus on Transportation Engineering. My work centers around Machine Vision and Deep Learning for Traffic Safety and Connected Autonomous Vehicles. I have a strong passion for AI and ML applications in the field of Transportation Engineering.</p>
+        </div>
+        <div id="academics" class="section">
+            <h2>Academics</h2>
+            <ul>
+                <li><strong>Master's in Civil Engineering</strong> | University of North Dakota | CGP: 4.00/4.00</li>
+                <li><strong>Bachelor's in Civil Engineering</strong> | Chittagong University of Engineering & Technology | CGPA: 3.13/4</li>
+                <li><strong>Higher Secondary Exam</strong> | Govt. Hazi Mohammad Mohsin College | GPA: 5.00/5.00</li>
+                <li><strong>Secondary Exam</strong> | St. Placid's High School | GPA: 5.00/5.00</li>
+            </ul>
+        </div>
+        <div id="work" class="section">
+            <h2>Work Experiences</h2>
+            <p><strong>Graduate Research Assistant</strong> | College of Engineering & Mines | August 2024-Current</p>
+            <ul>
+                <li><strong>Project 1:</strong> PROACTIVE TRAFFIC SAFETY ASSESSMENT AT HIGH-RISK INTERSECTIONS USING MACHINE VISION APPLICATIONS</li>
+                <ul>
+                    <li>Objective: Use modern updated machine vision technologies for traffic conflict analysis</li>
+                    <li>Responsibilities:
+                        <ul>
+                            <li>Collect and compile videos of peak-hour traffic from CCTV footage and prepare them for analysis.</li>
+                            <li>Create detection algorithms to identify pedestrians and vehicles.</li>
+                            <li>Create reports of task progress.</li>
+                        </ul>
+                    </li>
+                </ul>
+                <li><strong>Project 2:</strong> Assessing The Impacts and Challenges of Truck Platooning on Highway Infrastructure in Montana</li>
+                <ul>
+                    <li>Objective: Assess the impact of truck platooning.</li>
+                    <li>Responsibilities: (Add your details here)</li>
+                </ul>
+            </ul>
+            <p><strong>Research Assistant</strong> | Institute of Earthquake Engineering Research | Dec 2024- June 2024</p>
+            <ul>
+                <li>Developed a Python package named ‘TCRA (Tropical Cyclone Resiliency Analysis)’ for community-level hurricane damage assessment.</li>
+                <li>Responsibilities included:
+                    <ul>
+                        <li>Mapping building inventory using Google Open Buildings.</li>
+                        <li>Conducting analysis on cyclone tracks using HURDAT2 and JTWC database.</li>
+                        <li>Creating damage portfolio using GIS, statistical tools, and Python.</li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <div id="publications" class="section">
+            <h2>Publications</h2>
+            <h3>Journal Papers:</h3>
+            <ul>
+                <li>Hasan, K., Roy, S., & Yahaya, F. M. (2024). An experimental and numerical investigation of using palm oil fuel ash as a partial cement replacement in steel fiber-reinforced concrete. <em>Innovative Infrastructure Solutions</em>, 9(9), 1-16.</li>
+                <li>Roy, S., Abir, A. R., & Ansary, M. A. (2024). Use of CPT and other Parameters for Estimating Soil Unit Weight Using Optimized Machine Learning Models. (Under Peer-Review in Applied Geomatics).</li>
+                <li>Mazumder, R. K., Roy, S., Kaddoura, K., Koo, D. (2025). State-of-the-art review and method for updating inconsistent materials and installation year in water and wastewater mains inventory. <em>UESI Pipelines 2025 Conference</em> (Abstract Accepted).</li>
+            </ul>
+            <h3>Conference Papers:</h3>
+            <ul>
+                <li>Roy, S., Kanungo, S., & Masum, M. M. H. (2024) Effects Of Industrial Effluents On The Water Quality Of Karnaphuli River, Bangladesh. <em>7th International Conference on Civil Engineering for Sustainable Development (ICCESD 2024)</em>.</li>
+            </ul>
+        </div>
+        <div id="projects" class="section">
+            <h2>Projects</h2>
+            <ul>
+                <li><strong>FindYourProfessor:</strong> A Python-based web scraper tool to extract emails of professors matching with keywords representing professors’ field of interest. Codes and analysis available on GitHub.</li>
+                <li><strong>Rain-Net:</strong> A rainfall forecasting model to predict rainfall from remote sensing data (IMERG, CHIRPS, SPEIbase) using deep learning and ML models. Codes and analysis available on GitHub.</li>
+            </ul>
+        </div>
+    </div>
+    <footer>
+        <p>&copy; 2025 Swaranjit Roy</p>
+    </footer>
 </body>
 </html>
