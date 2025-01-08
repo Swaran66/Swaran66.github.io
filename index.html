@@ -59,12 +59,16 @@
             margin-bottom: 20px;
             color: #2c3e50;
         }
-        .section ul {
-            list-style-type: none;
-            padding: 0;
+        .academic-section, .work-section, .publication-section, .project-section {
+            margin-bottom: 20px;
+            padding: 15px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            background-color: #f9f9f9;
         }
-        .section ul li {
-            margin: 5px 0;
+        .academic-section h3, .work-section h3, .publication-section h3, .project-section h3 {
+            color: #2c3e50;
+            margin-bottom: 10px;
         }
         footer {
             text-align: center;
@@ -108,65 +112,89 @@
         </div>
         <div id="academics" class="section">
             <h2>Academics</h2>
-            <ul>
-                <li><strong>Master's in Civil Engineering</strong> | University of North Dakota | CGP: 4.00/4.00</li>
-                <li><strong>Bachelor's in Civil Engineering</strong> | Chittagong University of Engineering & Technology | CGPA: 3.13/4</li>
-                <li><strong>Higher Secondary Exam</strong> | Govt. Hazi Mohammad Mohsin College | GPA: 5.00/5.00</li>
-                <li><strong>Secondary Exam</strong> | St. Placid's High School | GPA: 5.00/5.00</li>
-            </ul>
+            <div class="academic-section">
+                <h3>Master's in Civil Engineering</h3>
+                <p>University of North Dakota | CGP: 4.00/4.00</p>
+            </div>
+            <div class="academic-section">
+                <h3>Bachelor's in Civil Engineering</h3>
+                <p>Chittagong University of Engineering & Technology | CGPA: 3.13/4</p>
+            </div>
+            <div class="academic-section">
+                <h3>Higher Secondary Exam</h3>
+                <p>Govt. Hazi Mohammad Mohsin College | GPA: 5.00/5.00</p>
+            </div>
+            <div class="academic-section">
+                <h3>Secondary Exam</h3>
+                <p>St. Placid's High School | GPA: 5.00/5.00</p>
+            </div>
         </div>
         <div id="work" class="section">
             <h2>Work Experiences</h2>
-            <p><strong>Graduate Research Assistant</strong> | College of Engineering & Mines | August 2024-Current</p>
-            <ul>
-                <li><strong>Project 1:</strong> PROACTIVE TRAFFIC SAFETY ASSESSMENT AT HIGH-RISK INTERSECTIONS USING MACHINE VISION APPLICATIONS</li>
+            <div class="work-section">
+                <h3>Graduate Research Assistant</h3>
+                <p>College of Engineering & Mines | August 2024-Current</p>
                 <ul>
-                    <li>Objective: Use modern updated machine vision technologies for traffic conflict analysis</li>
-                    <li>Responsibilities:
+                    <li><strong>Project 1:</strong> PROACTIVE TRAFFIC SAFETY ASSESSMENT AT HIGH-RISK INTERSECTIONS USING MACHINE VISION APPLICATIONS</li>
+                    <ul>
+                        <li>Objective: Use modern updated machine vision technologies for traffic conflict analysis</li>
+                        <li>Responsibilities:
+                            <ul>
+                                <li>Collect and compile videos of peak-hour traffic from CCTV footage and prepare them for analysis.</li>
+                                <li>Create detection algorithms to identify pedestrians and vehicles.</li>
+                                <li>Create reports of task progress.</li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <li><strong>Project 2:</strong> Assessing The Impacts and Challenges of Truck Platooning on Highway Infrastructure in Montana</li>
+                    <ul>
+                        <li>Objective: Assess the impact of truck platooning.</li>
+                        <li>Responsibilities: (Add your details here)</li>
+                    </ul>
+                </ul>
+            </div>
+            <div class="work-section">
+                <h3>Research Assistant</h3>
+                <p>Institute of Earthquake Engineering Research | Dec 2024- June 2024</p>
+                <ul>
+                    <li>Developed a Python package named ‘TCRA (Tropical Cyclone Resiliency Analysis)’ for community-level hurricane damage assessment.</li>
+                    <li>Responsibilities included:
                         <ul>
-                            <li>Collect and compile videos of peak-hour traffic from CCTV footage and prepare them for analysis.</li>
-                            <li>Create detection algorithms to identify pedestrians and vehicles.</li>
-                            <li>Create reports of task progress.</li>
+                            <li>Mapping building inventory using Google Open Buildings.</li>
+                            <li>Conducting analysis on cyclone tracks using HURDAT2 and JTWC database.</li>
+                            <li>Creating damage portfolio using GIS, statistical tools, and Python.</li>
                         </ul>
                     </li>
                 </ul>
-                <li><strong>Project 2:</strong> Assessing The Impacts and Challenges of Truck Platooning on Highway Infrastructure in Montana</li>
-                <ul>
-                    <li>Objective: Assess the impact of truck platooning.</li>
-                    <li>Responsibilities: (Add your details here)</li>
-                </ul>
-            </ul>
-            <p><strong>Research Assistant</strong> | Institute of Earthquake Engineering Research | Dec 2024- June 2024</p>
-            <ul>
-                <li>Developed a Python package named ‘TCRA (Tropical Cyclone Resiliency Analysis)’ for community-level hurricane damage assessment.</li>
-                <li>Responsibilities included:
-                    <ul>
-                        <li>Mapping building inventory using Google Open Buildings.</li>
-                        <li>Conducting analysis on cyclone tracks using HURDAT2 and JTWC database.</li>
-                        <li>Creating damage portfolio using GIS, statistical tools, and Python.</li>
-                    </ul>
-                </li>
-            </ul>
+            </div>
         </div>
         <div id="publications" class="section">
             <h2>Publications</h2>
-            <h3>Journal Papers:</h3>
-            <ul>
-                <li>Hasan, K., Roy, S., & Yahaya, F. M. (2024). An experimental and numerical investigation of using palm oil fuel ash as a partial cement replacement in steel fiber-reinforced concrete. <em>Innovative Infrastructure Solutions</em>, 9(9), 1-16.</li>
-                <li>Roy, S., Abir, A. R., & Ansary, M. A. (2024). Use of CPT and other Parameters for Estimating Soil Unit Weight Using Optimized Machine Learning Models. (Under Peer-Review in Applied Geomatics).</li>
-                <li>Mazumder, R. K., Roy, S., Kaddoura, K., Koo, D. (2025). State-of-the-art review and method for updating inconsistent materials and installation year in water and wastewater mains inventory. <em>UESI Pipelines 2025 Conference</em> (Abstract Accepted).</li>
-            </ul>
-            <h3>Conference Papers:</h3>
-            <ul>
-                <li>Roy, S., Kanungo, S., & Masum, M. M. H. (2024) Effects Of Industrial Effluents On The Water Quality Of Karnaphuli River, Bangladesh. <em>7th International Conference on Civil Engineering for Sustainable Development (ICCESD 2024)</em>.</li>
-            </ul>
+            <div class="publication-section">
+                <h3>Journal Papers</h3>
+                <ul>
+                    <li>Hasan, K., Roy, S., & Yahaya, F. M. (2024). An experimental and numerical investigation of using palm oil fuel ash as a partial cement replacement in steel fiber-reinforced concrete. <em>Innovative Infrastructure Solutions</em>, 9(9), 1-16.</li>
+                    <li>Roy, S., Abir, A. R., & Ansary, M. A. (2024). Use of CPT and other Parameters for Estimating Soil Unit Weight Using Optimized Machine Learning Models. (Under Peer-Review in Applied Geomatics).</li>
+                    <li>Mazumder, R. K., Roy, S., Kaddoura, K., Koo, D. (2025). State-of-the-art review and method for updating inconsistent materials and installation year in water and wastewater mains inventory. <em>UESI Pipelines 2025 Conference</em> (Abstract Accepted).</li>
+                </ul>
+            </div>
+            <div class="publication-section">
+                <h3>Conference Papers</h3>
+                <ul>
+                    <li>Roy, S., Kanungo, S., & Masum, M. M. H. (2024) Effects Of Industrial Effluents On The Water Quality Of Karnaphuli River, Bangladesh. <em>7th International Conference on Civil Engineering for Sustainable Development (ICCESD 2024)</em>.</li>
+                </ul>
+            </div>
         </div>
         <div id="projects" class="section">
             <h2>Projects</h2>
-            <ul>
-                <li><strong>FindYourProfessor:</strong> A Python-based web scraper tool to extract emails of professors matching with keywords representing professors’ field of interest. Codes and analysis available on GitHub.</li>
-                <li><strong>Rain-Net:</strong> A rainfall forecasting model to predict rainfall from remote sensing data (IMERG, CHIRPS, SPEIbase) using deep learning and ML models. Codes and analysis available on GitHub.</li>
-            </ul>
+            <div class="project-section">
+                <h3>FindYourProfessor</h3>
+                <p>A Python-based web scraper tool to extract emails of professors matching with keywords representing professors’ field of interest. Codes and analysis available on GitHub.</p>
+            </div>
+            <div class="project-section">
+                <h3>Rain-Net</h3>
+                <p>A rainfall forecasting model to predict rainfall from remote sensing data (IMERG, CHIRPS, SPEIbase) using deep learning and ML models. Codes and analysis available on GitHub.</p>
+            </div>
         </div>
     </div>
     <footer>
