@@ -1,185 +1,148 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Swaranjit Roy</title>
-    <style>
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #eaf0f1;
-            color: #34495e;
-        }
-        header {
-            background: linear-gradient(90deg, #2980b9, #6dd5fa, #ffffff);
-            color: white;
-            text-align: center;
-            padding: 20px 0;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-        }
-        header h1 {
-            margin: 0;
-            font-size: 2.5em;
-        }
-        nav {
-            display: flex;
-            justify-content: center;
-            background-color: #3498db;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-        }
-        nav a {
-            color: white;
-            text-decoration: none;
-            margin: 0 15px;
-            padding: 10px 20px;
-            font-size: 1.2em;
-            transition: background-color 0.3s, color 0.3s;
-        }
-        nav a:hover {
-            background-color: #2980b9;
-            color: #ffffff;
-            border-radius: 5px;
-        }
-        .content {
-            padding: 30px;
-            max-width: 900px;
-            margin: auto;
-            display: none;
-        }
-        .content.active {
-            display: block;
-        }
-        .section h2 {
-            border-bottom: 2px solid #3498db;
-            padding-bottom: 10px;
-            margin-bottom: 20px;
-            color: #2c3e50;
-        }
-        .academic-section, .work-section, .publication-section, .project-section {
-            margin-bottom: 20px;
-            padding: 15px;
-            border: 1px solid #ddd;
-            border-radius: 5px;
-            background-color: #f9f9f9;
-            transition: background-color 0.3s, box-shadow 0.3s;
-        }
-        .academic-section:hover, .work-section:hover, .publication-section:hover, .project-section:hover {
-            background-color: #e0f7fa;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-        }
-        .academic-section h3, .work-section h3, .publication-section h3, .project-section h3 {
-            color: #2c3e50;
-            cursor: pointer;
-            margin-bottom: 10px;
-        }
-        .hidden {
-            display: none;
-        }
-        footer {
-            text-align: center;
-            background: #3498db;
-            color: white;
-            padding: 15px 0;
-            position: fixed;
-            bottom: 0;
-            width: 100%;
-            box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
-        }
-    </style>
-    <script>
-        function showSection(sectionId) {
-            const sections = document.querySelectorAll('.content');
-            sections.forEach(section => section.classList.remove('active'));
-            document.getElementById(sectionId).classList.add('active');
-        }
+<!DOCTYPE HTML>
+<!--
+    Portfolio for Swaranjit Roy
+    Developed using Miniport by HTML5 UP
+    Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+    <head>
+        <title>Swaranjit Roy's Portfolio</title>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+        <link rel="stylesheet" href="assets/css/main.css" />
+    </head>
+    <body class="is-preload">
 
-        function toggleSubSectionContent(subSectionId) {
-            const subSection = document.getElementById(subSectionId);
-            subSection.classList.toggle('hidden');
-        }
+        <!-- Nav -->
+        <nav id="nav">
+            <ul class="container">
+                <li><a href="#Home">Home</a></li>
+                <li><a href="#Experience">Experience</a></li>
+                <li><a href="#Projects">Projects</a></li>
+                <li><a href="#Publications">Publications</a></li>
+                <li><a href="#Education">Education</a></li>
+                <li><a href="#Contact">Contact</a></li>
+            </ul>
+        </nav>
 
-        document.addEventListener('DOMContentLoaded', () => {
-            showSection('home'); // Show home section by default
-        });
-    </script>
-</head>
-<body>
-    <header>
-        <h1>Swaranjit Roy</h1>
-    </header>
-    <nav>
-        <a href="#" onclick="showSection('home')">Home</a>
-        <a href="#" onclick="showSection('academics')">Academics</a>
-        <a href="#" onclick="showSection('work')">Work Experiences</a>
-        <a href="#" onclick="showSection('publications')">Publications</a>
-        <a href="#" onclick="showSection('projects')">Projects</a>
-    </nav>
-    <div id="home" class="content active">
-        <h2>Home</h2>
-        <p>My name is <strong>Swaranjit Roy</strong>. I am a Civil Engineering Graduate student at the University of North Dakota with a focus on Transportation Engineering. My work centers around Machine Vision and Deep Learning for Traffic Safety and Connected Autonomous Vehicles. I have a strong passion for AI and ML applications in the field of Transportation Engineering.</p>
-    </div>
-    <div id="academics" class="content">
-        <h2>Academics</h2>
-        <div class="academic-section">
-            <h3 onclick="toggleSubSectionContent('masters')">Master's in Civil Engineering</h3>
-            <p id="masters" class="hidden">University of North Dakota | CGP: 4.00/4.00</p>
-        </div>
-        <div class="academic-section">
-            <h3 onclick="toggleSubSectionContent('bachelors')">Bachelor's in Civil Engineering</h3>
-            <p id="bachelors" class="hidden">Chittagong University of Engineering & Technology | CGPA: 3.13/4</p>
-        </div>
-        <div class="academic-section">
-            <h3 onclick="toggleSubSectionContent('higher_secondary')">Higher Secondary Exam</h3>
-            <p id="higher_secondary" class="hidden">Govt. Hazi Mohammad Mohsin College | GPA: 5.00/5.00</p>
-        </div>
-        <div class="academic-section">
-            <h3 onclick="toggleSubSectionContent('secondary')">Secondary Exam</h3>
-            <p id="secondary" class="hidden">St. Placid's High School | GPA: 5.00/5.00</p>
-        </div>
-    </div>
-    <div id="work" class="content">
-        <h2>Work Experiences</h2>
-        <div class="work-section">
-            <h3 onclick="toggleSubSectionContent('gra')">Graduate Research Assistant</h3>
-            <p id="gra" class="hidden">College of Engineering & Mines | August 2024-Current</p>
-        </div>
-        <div class="work-section">
-            <h3 onclick="toggleSubSectionContent('ra')">Research Assistant</h3>
-            <p id="ra" class="hidden">Institute of Earthquake Engineering Research | Dec 2024- June 2024</p>
-        </div>
-    </div>
-    <div id="publications" class="content">
-        <h2>Publications</h2>
-        <div class="publication-section">
-            <h3 onclick="toggleSubSectionContent('journals')">Journal Papers</h3>
-            <ul id="journals" class="hidden">
-                <li>Hasan, K., Roy, S., & Yahaya, F. M. (2024). An experimental and numerical investigation of using palm oil fuel ash as a partial cement replacement in steel fiber-reinforced concrete. <em>Innovative Infrastructure Solutions</em>, 9(9), 1-16.</li>
-                <li>Roy, S., Abir, A. R., & Ansary, M. A. (2024). Use of CPT and other Parameters for Estimating Soil Unit Weight Using Optimized Machine Learning Models. (Under Peer-Review in Applied Geomatics).</li>
-                <li>Mazumder, R. K., Roy, S., Kaddoura, K., Koo, D. (2025). State-of-the-art review and method for updating inconsistent materials and installation year in water and wastewater mains inventory. <em>UESI Pipelines 2025 Conference</em> (Abstract Accepted).</li>
-            </ul>
-        </div>
-        <div class="publication-section">
-            <h3 onclick="toggleSubSectionContent('conference')">Conference Papers</h3>
-            <ul id="conference" class="hidden">
-                <li>Roy, S., Kanungo, S., & Masum, M. M. H. (2024) Effects Of Industrial Effluents On The Water Quality Of Karnaphuli River, Bangladesh. <em>7th International Conference on Civil Engineering for Sustainable Development (ICCESD 2024)</em>.</li>
-            </ul>
-        </div>
-    </div>
-    <div id="projects" class="content">
-        <h2>Projects</h2>
-        <div class="project-section">
-            <h3 onclick="toggleSubSectionContent('fyp')">FindYourProfessor</h3>
-            <p id="fyp" class="hidden">A Python-based web scraper tool to extract emails of professors matching with keywords representing professors’ field of interest. Codes and analysis available on GitHub.</p>
-        </div>
-        <div class="project-section">
-            <h3 onclick="toggleSubSectionContent('rain_net')">Rain-Net</h3>
-            <p id="rain_net" class="hidden">A rainfall forecasting model to predict rainfall from remote sensing data (IMERG, CHIRPS, SPEIbase) using deep learning and ML models. Codes and analysis available on GitHub.</p>
-        </div>
-    </div>
-    <footer>
-        <p>&copy; 2025 Swaranjit Roy</p>
-    </footer>
-</body>
+        <!-- Home -->
+        <article id="Home" class="wrapper style1">
+            <div class="container">
+                <div class="row">
+                    <div class="col-4 col-5-large col-12-medium">
+                        <span class="image fit"><img src="images/profile.jpg" alt="Swaranjit Roy" /></span>
+                    </div>
+                    <div class="col-8 col-7-large col-12-medium">
+                        <header>
+                            <h1>Hi. I'm <strong>Swaranjit Roy</strong>.</h1>
+                        </header>
+                        <p>I am a <strong>Civil Engineering Graduate Student</strong> at the University of North Dakota with a focus on Transportation Engineering. My research revolves around Machine Vision and Deep Learning for Traffic Safety and Connected Autonomous Vehicles. I am passionate about applying AI and ML in Transportation Engineering. Feel free to explore my portfolio and get in <a href="mailto:swaranjitroy@email.com">touch</a> with me.</p>
+                        <a href="#Experience" class="button large scrolly">Learn more about me</a>
+                    </div>
+                </div>
+            </div>
+        </article>
+
+        <!-- Experience -->
+        <article id="Experience" class="wrapper style2">
+            <div class="container">
+                <header>
+                    <h2>Experience</h2>
+                    <p>A brief overview of my professional background and skills.</p>
+                </header>
+                <h3>Graduate Research Assistant</h3>
+                <p><strong>University of North Dakota, College of Engineering & Mines</strong><br>August 2024 - Present</p>
+                <ul>
+                    <li>Project: Proactive Traffic Safety Assessment at High-Risk Intersections using Machine Vision Applications</li>
+                    <li>Responsibilities: Developing detection algorithms for pedestrians and vehicles, preparing reports, and analyzing CCTV footage.</li>
+                    <li>Project: Assessing Impacts and Challenges of Truck Platooning on Highway Infrastructure in Montana</li>
+                </ul>
+
+                <h3>Research Assistant</h3>
+                <p><strong>Institute of Earthquake Engineering Research</strong><br>December 2023 - June 2024</p>
+                <ul>
+                    <li>Developed TCRA (Tropical Cyclone Resiliency Analysis), a Python-based package for community-level hurricane damage assessment.</li>
+                    <li>Conducted GIS mapping, statistical analysis, and damage portfolio creation.</li>
+                </ul>
+            </div>
+        </article>
+
+        <!-- Projects -->
+        <article id="Projects" class="wrapper style3">
+            <div class="container">
+                <header>
+                    <h2>Projects</h2>
+                </header>
+                <div class="row">
+                    <div class="col-4 col-6-medium col-12-small">
+                        <article class="box style3">
+                            <h3>FindYourProfessor</h3>
+                            <p>A Python-based tool to extract professors' emails based on keywords related to their field of interest. <a href="https://github.com">View on GitHub</a></p>
+                        </article>
+                    </div>
+                    <div class="col-4 col-6-medium col-12-small">
+                        <article class="box style3">
+                            <h3>Rain-Net</h3>
+                            <p>A rainfall forecasting model using deep learning and machine learning with IMERG, CHIRPS, and SPEIbase data. <a href="https://github.com">View on GitHub</a></p>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </article>
+
+        <!-- Publications -->
+        <article id="Publications" class="wrapper style2">
+            <div class="container">
+                <header>
+                    <h2>Publications</h2>
+                    <p>A selection of my research papers and articles.</p>
+                </header>
+                <ul>
+                    <li>Hasan, K., Roy, S., & Yahaya, F. M. (2024). An experimental and numerical investigation of using palm oil fuel ash as a partial cement replacement in steel fiber-reinforced concrete. <em>Innovative Infrastructure Solutions</em>.</li>
+                    <li>Roy, S., Abir, A. R., & Ansary, M. A. (2024). Use of CPT and other Parameters for Estimating Soil Unit Weight Using Optimized Machine Learning Models. <em>Applied Geomatics</em> (Under Peer-Review).</li>
+                </ul>
+            </div>
+        </article>
+
+        <!-- Education -->
+        <article id="Education" class="wrapper style2">
+            <div class="container">
+                <header>
+                    <h2>Education</h2>
+                </header>
+                <h3>Master's in Civil Engineering</h3>
+                <p>University of North Dakota | CGPA: 4.00/4.00</p>
+                <h3>Bachelor's in Civil Engineering</h3>
+                <p>Chittagong University of Engineering & Technology | CGPA: 3.13/4</p>
+                <h3>Higher Secondary Exam</h3>
+                <p>Govt. Hazi Mohammad Mohsin College | GPA: 5.00/5.00</p>
+                <h3>Secondary Exam</h3>
+                <p>St. Placid's High School | GPA: 5.00/5.00</p>
+            </div>
+        </article>
+
+        <!-- Contact -->
+        <article id="Contact" class="wrapper style4">
+            <div class="container medium">
+                <header>
+                    <h2>Contact Me</h2>
+                    <p>Feel free to reach out for any questions or collaborations.</p>
+                </header>
+                <ul class="social">
+                    <li><a href="https://www.linkedin.com" class="icon brands fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
+                    <li><a href="https://github.com" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+                    <li><a href="mailto:swaranjitroy@email.com" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
+                </ul>
+            </div>
+        </article>
+
+        <!-- Scripts -->
+        <script src="assets/js/jquery.min.js"></script>
+        <script src="assets/js/jquery.scrolly.min.js"></script>
+        <script src="assets/js/browser.min.js"></script>
+        <script src="assets/js/breakpoints.min.js"></script>
+        <script src="assets/js/util.js"></script>
+        <script src="assets/js/main.js"></script>
+
+    </body>
 </html>
