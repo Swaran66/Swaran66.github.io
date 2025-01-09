@@ -12,7 +12,6 @@
         <link rel="stylesheet" href="assets/css/main.css" />
     </head>
     <body class="is-preload">
-
         <!-- Nav -->
         <nav id="nav">
             <ul class="container">
@@ -59,7 +58,8 @@
                 <div>
                     <h3>Graduate Research Assistant</h3>
                     <p class="expandable-title" style="font-weight: normal;"><strong>University of North Dakota, College of Engineering & Mines</strong> <span class="icon">&#x25BC;</span></p>
-                    <div class="expandable-content" style="display:none;"><br>August 2024 - Present</p>
+                    <div class="expandable-content" style="display:none;">
+                        <br>August 2024 - Present
                         <ul>
                             <li>Project: Proactive Traffic Safety Assessment at High-Risk Intersections using Machine Vision Applications</li>
                             <li>Responsibilities: Developing detection algorithms for pedestrians and vehicles, preparing reports, and analyzing CCTV footage.</li>
@@ -70,7 +70,8 @@
                 <div>
                     <h3>Research Assistant</h3>
                     <p class="expandable-title" style="font-weight: normal;"><strong>Institute of Earthquake Engineering Research</strong> <span class="icon">&#x25BC;</span></p>
-                    <div class="expandable-content" style="display:none;"><br>December 2023 - June 2024</p>
+                    <div class="expandable-content" style="display:none;">
+                        <br>December 2023 - June 2024
                         <ul>
                             <li>Developed TCRA (Tropical Cyclone Resiliency Analysis), a Python-based package for community-level hurricane damage assessment.</li>
                             <li>Conducted GIS mapping, statistical analysis, and damage portfolio creation.</li>
@@ -83,11 +84,6 @@
         <!-- Publications -->
         <article id="Publications" class="wrapper style2">
             <div class="container">
-                <style>
-                    #Publications h3 {
-                        font-size: 0.9em; /* Reduced font size */
-                    }
-                </style>
                 <header>
                     <h2>Publications</h2>
                     <p>A selection of my research papers and articles.</p>
@@ -145,4 +141,66 @@
         <!-- Education -->
         <article id="Education" class="wrapper style2">
             <div class="container">
-                <header
+                <header>
+                    <h2>Education</h2>
+                </header>
+                <h3>Master's in Civil Engineering</h3>
+                <p>University of North Dakota | CGPA: 4.00/4.00</p>
+                <h3>Bachelor's in Civil Engineering</h3>
+                <p>Chittagong University of Engineering & Technology | CGPA: 3.13/4</p>
+                <h3>Higher Secondary Exam</h3>
+                <p>Govt. Hazi Mohammad Mohsin College | GPA: 5.00/5.00</p>
+                <h3>Secondary Exam</h3>
+                <p>St. Placid's High School | GPA: 5.00/5.00</p>
+            </div>
+        </article>
+
+        <!-- Contact -->
+        <article id="Contact" class="wrapper style4">
+            <div class="container medium">
+                <header>
+                    <h2>Contact Me</h2>
+                    <p>Feel free to reach out for any questions or collaborations.</p>
+                </header>
+                <ul class="social">
+                    <li><a href="https://www.linkedin.com/in/swaranjit-roy/" class="icon brands fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
+                    <li><a href="https://github.com/Swaran66" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+                    <li><a href="mailto:swaranjitroy08@gmail.com" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
+                </ul>
+            </div>
+        </article>
+
+        <!-- Scripts -->
+        <script src="assets/js/jquery.min.js"></script>
+        <script src="assets/js/jquery.scrolly.min.js"></script>
+        <script src="assets/js/browser.min.js"></script>
+        <script src="assets/js/breakpoints.min.js"></script>
+        <script src="assets/js/util.js"></script>
+        <script src="assets/js/main.js"></script>
+
+        <script>
+            document.querySelectorAll('.expandable-title').forEach(title => {
+                title.addEventListener('click', () => {
+                    const content = title.nextElementSibling;
+                    const icon = title.querySelector('.icon');
+                    if (content.style.display === 'none' || content.style.display === '') {
+                        content.style.display = 'block';
+                        icon.innerHTML = '&#x25B2;'; // Up arrow
+                    } else {
+                        content.style.display = 'none';
+                        icon.innerHTML = '&#x25BC;'; // Down arrow
+                    }
+                });
+            });
+        </script>
+        <style>
+            .expandable-title {
+                cursor: pointer;
+                transition: color 0.3s ease;
+            }
+            .expandable-title:hover {
+                color: #007BFF; /* Change to your preferred hover color */
+            }
+        </style>
+    </body>
+</html>
