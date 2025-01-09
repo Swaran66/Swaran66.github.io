@@ -8,8 +8,8 @@
         <style>
             /* Fix the gap between expandable-content and arrow */
             .expandable-content {
-                margin-top: 0; /* Removes the gap */
-                margin-bottom: 15px; /* Optional: Add some spacing at the bottom */
+                margin: 0; /* Remove top and bottom margin */
+                padding: 10px 0 0 0; /* Optional: Add top padding for spacing */
                 display: none; /* Default hidden */
             }
 
@@ -19,7 +19,7 @@
                 line-height: 1.5; /* Ensure readability with proper line spacing */
             }
 
-            /* Optional: Styling for expandable-title hover effect */
+            /* Expandable title hover effect */
             .expandable-title {
                 cursor: pointer;
                 transition: color 0.3s ease;
@@ -27,6 +27,12 @@
 
             .expandable-title:hover {
                 color: #007BFF; /* Change hover color */
+            }
+
+            /* Ensure no gap between the arrow and text */
+            .expandable-title .icon {
+                margin-left: 5px; /* Adjust spacing between title text and arrow */
+                display: inline-block; /* Ensure arrow is aligned properly */
             }
         </style>
     </head>
