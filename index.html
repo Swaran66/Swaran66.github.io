@@ -51,27 +51,34 @@
 
         <!-- Experience -->
         <article id="Experience" class="wrapper style2">
-            <div class="container">
-                <header>
-                    <h2>Experience</h2>
-                    <p>A brief overview of my professional background and skills.</p>
-                </header>
-                <h3>Graduate Research Assistant</h3>
+    <div class="container">
+        <header>
+            <h2>Experience</h2>
+            <p>A brief overview of my professional background and skills.</p>
+        </header>
+        <div>
+            <h3 class="expandable-title">Graduate Research Assistant <span class="icon">&#x25BC;</span></h3>
+            <div class="expandable-content" style="display:none;">
                 <p><strong>University of North Dakota, College of Engineering & Mines</strong><br>August 2024 - Present</p>
                 <ul>
                     <li>Project: Proactive Traffic Safety Assessment at High-Risk Intersections using Machine Vision Applications</li>
                     <li>Responsibilities: Developing detection algorithms for pedestrians and vehicles, preparing reports, and analyzing CCTV footage.</li>
                     <li>Project: Assessing Impacts and Challenges of Truck Platooning on Highway Infrastructure in Montana</li>
                 </ul>
-
-                <h3>Research Assistant</h3>
+            </div>
+        </div>
+        <div>
+            <h3 class="expandable-title">Research Assistant <span class="icon">&#x25BC;</span></h3>
+            <div class="expandable-content" style="display:none;">
                 <p><strong>Institute of Earthquake Engineering Research</strong><br>December 2023 - June 2024</p>
                 <ul>
                     <li>Developed TCRA (Tropical Cyclone Resiliency Analysis), a Python-based package for community-level hurricane damage assessment.</li>
                     <li>Conducted GIS mapping, statistical analysis, and damage portfolio creation.</li>
                 </ul>
             </div>
-        </article>
+        </div>
+    </div>
+</article>
 
         <!-- Projects -->
         <article id="Projects" class="wrapper style3">
@@ -98,20 +105,37 @@
 
         <!-- Publications -->
         <article id="Publications" class="wrapper style2">
-            <div class="container">
-                <header>
-                    <h2>Publications</h2>
-                    <p>A selection of my research papers and articles.</p>
-                </header>
-                <ul>
-                    <li>Hasan, K., Roy, S., & Yahaya, F. M. (2024). An experimental and numerical investigation of using palm oil fuel ash as a partial cement replacement in steel fiber-reinforced concrete. <em>Innovative Infrastructure Solutions</em>, 9(9), 1-16.</li>
-                    <li>Roy, S., Abir, A. R., & Ansary, M. A. (2024). Use of CPT and other Parameters for Estimating Soil Unit Weight Using Optimized Machine Learning Models. (Under Peer-Review in <em>Earth Science Informatics</em>).</li>
-                    <li>Mazumder, R. K., Roy, S., Kaddoura, K., Koo, D. (2025). State-of-the-art review and method for updating inconsistent materials and installation year in water and wastewater mains inventory. <em>Journal of Pipeline Science and Engineering</em>.</li>
-                    <li>Roy, S., Kanungo, S., & Masum, M. M. H. (2024). Effects Of Industrial Effluents On The Water Quality Of Karnaphuli River, Bangladesh. <em>7th International Conference on Civil Engineering for Sustainable Development (ICCESD 2024)</em>.</li>
-                    
-                </ul>
+    <div class="container">
+        <header>
+            <h2>Publications</h2>
+            <p>A selection of my research papers and articles.</p>
+        </header>
+        <div>
+            <h3 class="expandable-title">Roy, S., Abir, A. R., & Ansary, M. A. (2024). Use of CPT and other Parameters for Estimating Soil Unit Weight Using Optimized Machine Learning Models. <em>Earth Science Informatics</em>. <span class="icon">&#x25BC;</span></h3>
+            <div class="expandable-content" style="display:none;">
+                <p>Details about the study and contributions can be added here.</p>
             </div>
-        </article>
+        </div>
+        <div>
+            <h3 class="expandable-title">Mazumder, R. K., Roy, S., Kaddoura, K., Koo, D. (2025). State-of-the-art review and method for updating inconsistent materials and installation year in water and wastewater mains inventory. <em>Journal of Pipeline Science and Engineering</em>. <span class="icon">&#x25BC;</span></h3>
+            <div class="expandable-content" style="display:none;">
+                <p>Details about the study and contributions can be added here.</p>
+            </div>
+        </div>
+        <div>
+            <h3 class="expandable-title">Hasan, K., Roy, S., & Yahaya, F. M. (2024). An experimental and numerical investigation of using palm oil fuel ash as a partial cement replacement in steel fiber-reinforced concrete. <em>Innovative Infrastructure Solutions</em>, 9(9), 1-16. <span class="icon">&#x25BC;</span></h3>
+            <div class="expandable-content" style="display:none;">
+                <p>Details about the study and contributions can be added here.</p>
+            </div>
+        </div>
+        <div>
+            <h3 class="expandable-title">Roy, S., Kanungo, S., & Masum, M. M. H. (2024). Effects Of Industrial Effluents On The Water Quality Of Karnaphuli River, Bangladesh. <em>7th International Conference on Civil Engineering for Sustainable Development (ICCESD 2024)</em>. <span class="icon">&#x25BC;</span></h3>
+            <div class="expandable-content" style="display:none;">
+                <p>Details about the study and contributions can be added here.</p>
+            </div>
+        </div>
+    </div>
+</article>
 
         <!-- Education -->
         <article id="Education" class="wrapper style2">
@@ -153,5 +177,20 @@
         <script src="assets/js/util.js"></script>
         <script src="assets/js/main.js"></script>
 
-    </body>
+    <script>
+    document.querySelectorAll('.expandable-title').forEach(title => {
+        title.addEventListener('click', () => {
+            const content = title.nextElementSibling;
+            const icon = title.querySelector('.icon');
+            if (content.style.display === 'none' || content.style.display === '') {
+                content.style.display = 'block';
+                icon.innerHTML = '&#x25B2;'; // Up arrow
+            } else {
+                content.style.display = 'none';
+                icon.innerHTML = '&#x25BC;'; // Down arrow
+            }
+        });
+    });
+</script>
+</body>
 </html>
