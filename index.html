@@ -1,15 +1,34 @@
 <!DOCTYPE HTML>
-<!--
-    Portfolio for Swaranjit Roy
-    Developed using Miniport by HTML5 UP
-    Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
 <html>
     <head>
         <title>Swaranjit Roy's Portfolio</title>
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
         <link rel="stylesheet" href="assets/css/main.css" />
+        <style>
+            /* Fix the gap between expandable-content and arrow */
+            .expandable-content {
+                margin-top: 0; /* Removes the gap */
+                margin-bottom: 15px; /* Optional: Add some spacing at the bottom */
+                display: none; /* Default hidden */
+            }
+
+            /* Publications Section: Reduce font size */
+            #Publications {
+                font-size: 0.9em; /* Adjust font size (smaller than default) */
+                line-height: 1.5; /* Ensure readability with proper line spacing */
+            }
+
+            /* Optional: Styling for expandable-title hover effect */
+            .expandable-title {
+                cursor: pointer;
+                transition: color 0.3s ease;
+            }
+
+            .expandable-title:hover {
+                color: #007BFF; /* Change hover color */
+            }
+        </style>
     </head>
     <body class="is-preload">
         <!-- Nav -->
@@ -57,9 +76,11 @@
                 </header>
                 <div>
                     <h3>Graduate Research Assistant</h3>
-                    <p class="expandable-title" style="font-weight: normal;"><strong>University of North Dakota, College of Engineering & Mines</strong> <span class="icon">&#x25BC;</span></p>
-                    <div class="expandable-content" style="display:none;">
-                        <br>August 2024 - Present
+                    <p class="expandable-title" style="font-weight: normal;">
+                        <strong>University of North Dakota, College of Engineering & Mines</strong>
+                        <span class="icon">&#x25BC;</span>
+                    </p>
+                    <div class="expandable-content">
                         <ul>
                             <li>Project: Proactive Traffic Safety Assessment at High-Risk Intersections using Machine Vision Applications</li>
                             <li>Responsibilities: Developing detection algorithms for pedestrians and vehicles, preparing reports, and analyzing CCTV footage.</li>
@@ -69,9 +90,11 @@
                 </div>
                 <div>
                     <h3>Research Assistant</h3>
-                    <p class="expandable-title" style="font-weight: normal;"><strong>Institute of Earthquake Engineering Research</strong> <span class="icon">&#x25BC;</span></p>
-                    <div class="expandable-content" style="display:none;">
-                        <br>December 2023 - June 2024
+                    <p class="expandable-title" style="font-weight: normal;">
+                        <strong>Institute of Earthquake Engineering Research</strong>
+                        <span class="icon">&#x25BC;</span>
+                    </p>
+                    <div class="expandable-content">
                         <ul>
                             <li>Developed TCRA (Tropical Cyclone Resiliency Analysis), a Python-based package for community-level hurricane damage assessment.</li>
                             <li>Conducted GIS mapping, statistical analysis, and damage portfolio creation.</li>
@@ -90,94 +113,20 @@
                 </header>
                 <div>
                     <h3 class="expandable-title" style="font-weight: normal;">Roy, S., Abir, A. R., & Ansary, M. A. (2024). Use of CPT and other Parameters for Estimating Soil Unit Weight Using Optimized Machine Learning Models. <em>Earth Science Informatics</em>. <span class="icon">&#x25BC;</span></h3>
-                    <div class="expandable-content" style="display:none;">
+                    <div class="expandable-content">
                         <p>Details about the study and contributions can be added here.</p>
                     </div>
                 </div>
                 <div>
                     <h3 class="expandable-title" style="font-weight: normal;">Mazumder, R. K., Roy, S., Kaddoura, K., Koo, D. (2025). State-of-the-art review and method for updating inconsistent materials and installation year in water and wastewater mains inventory. <em>Journal of Pipeline Science and Engineering</em>. <span class="icon">&#x25BC;</span></h3>
-                    <div class="expandable-content" style="display:none;">
+                    <div class="expandable-content">
                         <p>Details about the study and contributions can be added here.</p>
                     </div>
                 </div>
-                <div>
-                    <h3 class="expandable-title" style="font-weight: normal;">Hasan, K., Roy, S., & Yahaya, F. M. (2024). An experimental and numerical investigation of using palm oil fuel ash as a partial cement replacement in steel fiber-reinforced concrete. <em>Innovative Infrastructure Solutions</em>, 9(9), 1-16. <span class="icon">&#x25BC;</span></h3>
-                    <div class="expandable-content" style="display:none;">
-                        <p>Details about the study and contributions can be added here.</p>
-                    </div>
-                </div>
-                <div>
-                    <h3 class="expandable-title" style="font-weight: normal;">Roy, S., Kanungo, S., & Masum, M. M. H. (2024). Effects Of Industrial Effluents On The Water Quality Of Karnaphuli River, Bangladesh. <em>7th International Conference on Civil Engineering for Sustainable Development (ICCESD 2024)</em>. <span class="icon">&#x25BC;</span></h3>
-                    <div class="expandable-content" style="display:none;">
-                        <p>Details about the study and contributions can be added here.</p>
-                    </div>
-                </div>
-            </div>
-        </article>
-
-        <!-- Projects -->
-        <article id="Projects" class="wrapper style3">
-            <div class="container">
-                <header>
-                    <h2>Projects</h2>
-                </header>
-                <div class="row">
-                    <div class="col-4 col-6-medium col-12-small">
-                        <article class="box style3">
-                            <h3>FindYourProfessor</h3>
-                            <p>A Python-based tool to extract professors' emails based on keywords related to their field of interest. <a href="https://github.com/Swaran66">View on GitHub</a></p>
-                        </article>
-                    </div>
-                    <div class="col-4 col-6-medium col-12-small">
-                        <article class="box style3">
-                            <h3>Rain-Net</h3>
-                            <p>A rainfall forecasting model using deep learning and machine learning with IMERG, CHIRPS, and SPEIbase data. <a href="https://github.com">View on GitHub</a></p>
-                        </article>
-                    </div>
-                </div>
-            </div>
-        </article>
-
-        <!-- Education -->
-        <article id="Education" class="wrapper style2">
-            <div class="container">
-                <header>
-                    <h2>Education</h2>
-                </header>
-                <h3>Master's in Civil Engineering</h3>
-                <p>University of North Dakota | CGPA: 4.00/4.00</p>
-                <h3>Bachelor's in Civil Engineering</h3>
-                <p>Chittagong University of Engineering & Technology | CGPA: 3.13/4</p>
-                <h3>Higher Secondary Exam</h3>
-                <p>Govt. Hazi Mohammad Mohsin College | GPA: 5.00/5.00</p>
-                <h3>Secondary Exam</h3>
-                <p>St. Placid's High School | GPA: 5.00/5.00</p>
-            </div>
-        </article>
-
-        <!-- Contact -->
-        <article id="Contact" class="wrapper style4">
-            <div class="container medium">
-                <header>
-                    <h2>Contact Me</h2>
-                    <p>Feel free to reach out for any questions or collaborations.</p>
-                </header>
-                <ul class="social">
-                    <li><a href="https://www.linkedin.com/in/swaranjit-roy/" class="icon brands fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
-                    <li><a href="https://github.com/Swaran66" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
-                    <li><a href="mailto:swaranjitroy08@gmail.com" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
-                </ul>
             </div>
         </article>
 
         <!-- Scripts -->
-        <script src="assets/js/jquery.min.js"></script>
-        <script src="assets/js/jquery.scrolly.min.js"></script>
-        <script src="assets/js/browser.min.js"></script>
-        <script src="assets/js/breakpoints.min.js"></script>
-        <script src="assets/js/util.js"></script>
-        <script src="assets/js/main.js"></script>
-
         <script>
             document.querySelectorAll('.expandable-title').forEach(title => {
                 title.addEventListener('click', () => {
@@ -193,14 +142,5 @@
                 });
             });
         </script>
-        <style>
-            .expandable-title {
-                cursor: pointer;
-                transition: color 0.3s ease;
-            }
-            .expandable-title:hover {
-                color: #007BFF; /* Change to your preferred hover color */
-            }
-        </style>
     </body>
 </html>
