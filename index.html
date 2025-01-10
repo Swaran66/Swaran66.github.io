@@ -9,13 +9,13 @@
             /* Fix the gap between expandable-content and arrow */
             .expandable-content {
                 margin: 0; /* Remove top and bottom margin */
-                padding: 10px 0 0 0; /* Optional: Add top padding for spacing */
+                padding: 5px 0 0 0; /* Optional: Add top padding for spacing */
                 display: none; /* Default hidden */
             }
 
             /* Publications Section: Reduce font size */
             #Publications {
-                font-size: 0.8em; /* Adjust font size (smaller than default) */
+                font-size: 0.7em; /* Adjust font size (smaller than default) */
                 line-height: 1.5; /* Ensure readability with proper line spacing */
             }
 
@@ -110,29 +110,46 @@
             </div>
         </article>
 
-        <!-- Publications -->
-        <article id="Publications" class="wrapper style2">
+        <!-- Education -->
+        <article id="Education" class="wrapper style2">
             <div class="container">
                 <header>
-                    <h2>Publications</h2>
-                    <p>A selection of my research papers and articles.</p>
+                    <h2>Education</h2>
                 </header>
-                <div>
-                    <h3 class="expandable-title" style="font-weight: normal;">Roy, S., Abir, A. R., & Ansary, M. A. (2024). Use of CPT and other Parameters for Estimating Soil Unit Weight Using Optimized Machine Learning Models. <em>Earth Science Informatics</em>. <span class="icon">&#x25BC;</span></h3>
-                    <div class="expandable-content">
-                        <p>Details about the study and contributions can be added here.</p>
-                    </div>
-                </div>
-                <div>
-                    <h3 class="expandable-title" style="font-weight: normal;">Mazumder, R. K., Roy, S., Kaddoura, K., Koo, D. (2025). State-of-the-art review and method for updating inconsistent materials and installation year in water and wastewater mains inventory. <em>Journal of Pipeline Science and Engineering</em>. <span class="icon">&#x25BC;</span></h3>
-                    <div class="expandable-content">
-                        <p>Details about the study and contributions can be added here.</p>
-                    </div>
-                </div>
+                <h3>Master's in Civil Engineering</h3>
+                <p>University of North Dakota | CGPA: 4.00/4.00</p>
+                <h3>Bachelor's in Civil Engineering</h3>
+                <p>Chittagong University of Engineering & Technology | CGPA: 3.13/4</p>
+                <h3>Higher Secondary Exam</h3>
+                <p>Govt. Hazi Mohammad Mohsin College | GPA: 5.00/5.00</p>
+                <h3>Secondary Exam</h3>
+                <p>St. Placid's High School | GPA: 5.00/5.00</p>
+            </div>
+        </article>
+
+        <!-- Contact -->
+        <article id="Contact" class="wrapper style4">
+            <div class="container medium">
+                <header>
+                    <h2>Contact Me</h2>
+                    <p>Feel free to reach out for any questions or collaborations.</p>
+                </header>
+                <ul class="social">
+                    <li><a href="https://www.linkedin.com/in/swaranjit-roy/" class="icon brands fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
+                    <li><a href="https://github.com/Swaran66" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+                    <li><a href="mailto:swaranjitroy08@gmail.com" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
+                </ul>
             </div>
         </article>
 
         <!-- Scripts -->
+        <script src="assets/js/jquery.min.js"></script>
+        <script src="assets/js/jquery.scrolly.min.js"></script>
+        <script src="assets/js/browser.min.js"></script>
+        <script src="assets/js/breakpoints.min.js"></script>
+        <script src="assets/js/util.js"></script>
+        <script src="assets/js/main.js"></script>
+
         <script>
             document.querySelectorAll('.expandable-title').forEach(title => {
                 title.addEventListener('click', () => {
